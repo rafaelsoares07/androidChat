@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             IO.Options opts = new IO.Options();
             opts.transports = new String[] {WebSocket.NAME};
 
-            mSocket = IO.socket("http://192.168.0.101:3000" ,opts);
+            mSocket = IO.socket("http://10.1.11.130:3000" ,opts);
             mSocket.connect();
         } catch (URISyntaxException e) {
         }
